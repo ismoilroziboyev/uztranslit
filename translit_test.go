@@ -19,7 +19,7 @@ func TestTransliterate(t *testing.T) {
 	}
 
 	for _, c := range cases {
-		result := transliterate(c.Input)
+		result := Transliterate(c.Input)
 
 		if result != c.Result {
 			t.Errorf("For input '%s', expected '%s', but got '%s'", c.Input, c.Result, result)
