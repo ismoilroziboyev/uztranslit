@@ -18,7 +18,7 @@ var cyrillicToLatin = map[rune]string{
 	'ъ': "", 'ы': "y", 'ь': "", 'э': "e", 'ю': "yu", 'я': "ya", 'ҳ': "h",
 }
 
-func transliterate(input string) string {
+func Transliterate(input string) string {
 	words := strings.Fields(input)
 	for i, word := range words {
 		runes := []rune(word)
